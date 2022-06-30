@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PathFinding Visualizer</title>
+    <style>
+      #targetNode,
+      #startNode {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #nodes-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+      }
+      .nodes-row {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+      }
+      .node {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        width: 100%;
+        height: 100%;
+        outline: 0.1px solid #0066ff;
+        letter-spacing: normal;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
